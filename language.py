@@ -4,6 +4,8 @@ import os.path
 import shutil
 
 def addLanguage(desFile, desStr):
+    exists = os.path.isfile(desFile)
+    if not exists:return
     with open(desFile, "r", encoding='utf-8') as f1:
         lines = f1.readlines()
     with open(desFile, "w", encoding='utf-8') as f2:
