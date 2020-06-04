@@ -1,12 +1,16 @@
 import random
 
-outfile = open("dict.txt", "w")
+# D1 Gσ6C
+# D2 ρβpP
+# D3 μυuU
+
+outfile = open("dict.txt", "w", encoding='utf-8')
 resultList=[]
-for i in range(20000):
-    count = random.randint(2,10)
+for i in range(50000):
+    count = random.randint(2,7)
     result=''
     for m in range(count):
-        result += random.choice('iIlL1')
+        result += random.choice('μυuU')
     if result not in resultList:
         resultList.append(result)
         outfile.write(result)
